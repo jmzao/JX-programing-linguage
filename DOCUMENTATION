@@ -1,0 +1,383 @@
+JX Language Documentation
+
+Author:
+João Manoel Martins Silveira
+
+Year:
+2026
+
+========================
+PORTUGUES
+========================
+
+1. REGRAS GERAIS
+
+- Parênteses devem ficar colados:
+  correto: input()
+  errado: input ()
+
+- Blocos usam {} com 2 espaços de indentação:
+
+If(condicao) then {
+  Console.display("ok")
+}
+
+- Maiúsculas e minúsculas não importam
+- Comentários começam com #
+
+---
+
+2. TIPOS
+
+int → número inteiro
+sel(max) → número limitado até max
+boolean → verdadeiro ou falso
+comando → armazena comandos
+
+Exemplos:
+n1 = 10
+Int n2 = 5
+Sel(100) n3 = 50
+
+---
+
+3. VARIAVEIS
+
+- Podem ser criadas com ou sem tipo:
+
+n1 = 10
+Int n2 = 5
+
+- Nomes não podem ser juntos (sem espaços)
+
+---
+
+4. OPERADORES
+
+== igual
+#= diferente
+< menor
+> maior
++ soma
+- subtração
+* multiplicação
+/ divisão
+
+---
+
+5. CONSOLE
+
+Console.display(valor)
+→ mostra no console
+
+Console.input(texto)
+→ recebe entrada do usuário
+
+Console.clear()
+→ limpa o console
+
+---
+
+6. APAGAR (RENDER)
+
+Console.back.backspace
+→ apaga 1 caractere
+
+Console.back.enter
+→ apaga 1 linha
+
+---
+
+7. INPUT
+
+Console.input("texto")
+valor = _input
+
+---
+
+8. INPUT DETECT
+
+tecla = input.detect()
+
+Retornos comuns:
+"w", "a", "s", "d"
+"enter"
+"space"
+
+---
+
+9. CONVERSAO
+
+transform.int(expr)
+transform.sel(max)(expr)
+
+Exemplo:
+n1 = transform.int(Console.input())
+
+---
+
+10. REPLACE
+
+Replace(var) to "valor"
+
+---
+
+11. IF / ELSE
+
+If(condicao) then {
+  codigo
+} else {
+  codigo
+}
+
+---
+
+12. LOOP
+
+Loop {
+  codigo
+}
+
+---
+
+13. STOP
+
+stop()
+→ para o loop atual
+
+stop(var)
+→ para loop específico
+
+---
+
+14. WAIT
+
+Wait(segundos)
+Wait.frame(frames)
+
+---
+
+15. COMANDOS EM VARIAVEL
+
+cmd = Console.display("oi")
+cmd
+
+---
+
+16. EXEMPLO
+
+Loop {
+  tecla = input.detect()
+
+  If(tecla == "w") then {
+    Console.display("cima")
+  }
+
+  Wait.frame(5)
+}
+
+========================
+ENGLISH
+========================
+
+1. GENERAL RULES
+
+- Parentheses must be attached:
+  correct: input()
+  wrong: input ()
+
+- Blocks use {} with 2 spaces indentation:
+
+If(condition) then {
+  Console.display("ok")
+}
+
+- Case insensitive
+- Comments start with #
+
+---
+
+2. TYPES
+
+int → integer number
+sel(max) → limited number
+boolean → true or false
+command → stores commands
+
+Examples:
+n1 = 10
+Int n2 = 5
+Sel(100) n3 = 50
+
+---
+
+3. VARIABLES
+
+- Can be created with or without type:
+
+n1 = 10
+Int n2 = 5
+
+- Names cannot contain spaces
+
+---
+
+4. OPERATORS
+
+== equal
+#= different
+< less than
+> greater than
++ addition
+- subtraction
+* multiplication
+/ division
+
+---
+
+5. CONSOLE
+
+Console.display(value)
+→ prints to console
+
+Console.input(text)
+→ user input
+
+Console.clear()
+→ clears console
+
+---
+
+6. CLEARING (RENDER)
+
+Console.back.backspace
+→ removes 1 character
+
+Console.back.enter
+→ removes 1 line
+
+---
+
+7. INPUT
+
+Console.input("text")
+value = _input
+
+---
+
+8. INPUT DETECT
+
+key = input.detect()
+
+Common values:
+"w", "a", "s", "d"
+"enter"
+"space"
+
+---
+
+9. CONVERSION
+
+transform.int(expr)
+transform.sel(max)(expr)
+
+Example:
+n1 = transform.int(Console.input())
+
+---
+
+10. REPLACE
+
+Replace(var) to "value"
+
+---
+
+11. IF / ELSE
+
+If(condition) then {
+  code
+} else {
+  code
+}
+
+---
+
+12. LOOP
+
+Loop {
+  code
+}
+
+---
+
+13. STOP
+
+stop()
+→ stops current loop
+
+stop(var)
+→ stops specific loop
+
+---
+
+14. WAIT
+
+Wait(seconds)
+Wait.frame(frames)
+
+---
+
+15. COMMAND STORAGE
+
+cmd = Console.display("hi")
+cmd
+
+---
+
+16. EXAMPLE
+
+Loop {
+
+  key = input.detect()
+
+  If(key == "w") then {
+    Console.display("up")
+  }
+
+  Wait.frame(5)
+}
+========================
+PORTUGUES
+========================
+
+17. FUTURO DA LINGUAGEM
+
+A linguagem JX ainda está em desenvolvimento e em constante evolução.
+
+Novas funcionalidades estão sendo planejadas, incluindo melhorias na
+performance, novos comandos e expansão do sistema de execução.
+
+No futuro, será possível criar jogos mais complexos utilizando engines
+desenvolvidas com base na linguagem JX, permitindo projetos mais avançados,
+com mais controle, interatividade e desempenho.
+
+A linguagem tem como objetivo evoluir de um sistema simples de console
+para uma base capaz de suportar desenvolvimento de jogos mais completos.
+
+========================
+ENGLISH
+========================
+
+17. LANGUAGE FUTURE
+
+The JX language is still under development and constantly evolving.
+
+New features are being planned, including performance improvements,
+new commands and expansion of the execution system.
+
+In the future, it will be possible to create more complex games using
+engines built on top of the JX language, allowing more advanced projects
+with greater control, interactivity and performance.
+
+The goal of the language is to evolve from a simple console system into
+a foundation capable of supporting more complete game development.
