@@ -1,7 +1,6 @@
 JX Language
-
-Author:
-João Manoel Martins Silveira
+version: 0.1
+Author: João Manoel Martins Silveira
 
 Year:
 2026
