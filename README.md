@@ -19,7 +19,7 @@ de forma simples e rápida.
 
 Características:
 - Sintaxe simples com {}
-- Uso de Loop, If e Else
+- Uso de Loop e If 
 - Sistema de console próprio
 - Input por Console.input e input.detect
 - Renderização com Console.display e Console.back
@@ -61,7 +61,7 @@ Allow anyone to create logic, games and even IDEs easily.
 
 Features:
 - Simple syntax using {}
-- Loop, If and Else support
+- Loop If support
 - Custom console system
 - Input using Console.input and input.detect
 - Rendering with Console.display and Console.back
