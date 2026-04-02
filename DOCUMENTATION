@@ -1,10 +1,8 @@
 JX Language Documentation
 
-Author:
-João Manoel Martins Silveira
-
-Year:
-2026
+Version: 0.1
+Author: João Manoel Martins Silveira
+Year: 2026
 
 ========================
 PORTUGUES
@@ -48,7 +46,7 @@ Sel(100) n3 = 50
 n1 = 10
 Int n2 = 5
 
-- Nomes não podem ser juntos (sem espaços)
+- Nomes não podem conter espaços
 
 ---
 
@@ -103,6 +101,7 @@ Retornos comuns:
 "w", "a", "s", "d"
 "enter"
 "space"
+"escape"
 
 ---
 
@@ -122,12 +121,20 @@ Replace(var) to "valor"
 
 ---
 
-11. IF / ELSE
+11. IF (SEM ELSE)
 
-If(condicao) then {
-  codigo
-} else {
-  codigo
+A linguagem JX não possui comando ELSE.
+
+Para simular ELSE, utilize duas condições:
+
+cond = (condicao)
+
+If(cond) then {
+  codigo verdadeiro
+}
+
+If(cond #= true) then {
+  codigo falso
 }
 
 ---
@@ -175,6 +182,20 @@ Loop {
 
   Wait.frame(5)
 }
+
+---
+
+17. STATUS DA LINGUAGEM
+
+JX v0.1 é:
+- funcional
+- experimental
+- em desenvolvimento
+
+Objetivo futuro:
+- suporte a jogos mais complexos
+- integração com engines
+- sistema mais robusto
 
 ========================
 ENGLISH
@@ -273,6 +294,7 @@ Common values:
 "w", "a", "s", "d"
 "enter"
 "space"
+"escape"
 
 ---
 
@@ -292,12 +314,20 @@ Replace(var) to "value"
 
 ---
 
-11. IF / ELSE
+11. IF (NO ELSE)
 
-If(condition) then {
-  code
-} else {
-  code
+JX does not have an ELSE command.
+
+To simulate ELSE, use two conditions:
+
+cond = (condition)
+
+If(cond) then {
+  true code
+}
+
+If(cond #= true) then {
+  false code
 }
 
 ---
@@ -337,7 +367,6 @@ cmd
 16. EXAMPLE
 
 Loop {
-
   key = input.detect()
 
   If(key == "w") then {
@@ -346,38 +375,17 @@ Loop {
 
   Wait.frame(5)
 }
-========================
-PORTUGUES
-========================
 
-17. FUTURO DA LINGUAGEM
+---
 
-A linguagem JX ainda está em desenvolvimento e em constante evolução.
+17. LANGUAGE STATUS
 
-Novas funcionalidades estão sendo planejadas, incluindo melhorias na
-performance, novos comandos e expansão do sistema de execução.
+JX v0.1 is:
+- functional
+- experimental
+- under development
 
-No futuro, será possível criar jogos mais complexos utilizando engines
-desenvolvidas com base na linguagem JX, permitindo projetos mais avançados,
-com mais controle, interatividade e desempenho.
-
-A linguagem tem como objetivo evoluir de um sistema simples de console
-para uma base capaz de suportar desenvolvimento de jogos mais completos.
-
-========================
-ENGLISH
-========================
-
-17. LANGUAGE FUTURE
-
-The JX language is still under development and constantly evolving.
-
-New features are being planned, including performance improvements,
-new commands and expansion of the execution system.
-
-In the future, it will be possible to create more complex games using
-engines built on top of the JX language, allowing more advanced projects
-with greater control, interactivity and performance.
-
-The goal of the language is to evolve from a simple console system into
-a foundation capable of supporting more complete game development.
+Future goal:
+- support complex games
+- integration with engines
+- more robust system
